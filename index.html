@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #predictionArea {
+            margin: 20px;
+        }
+        #result {
+            margin: 20px;
+            font-size: 1.5em;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 1em;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aviator Predictor</h1>
+    <div id="predictionArea">
+        <label for="previousValues">Enter previous flight times separated by commas (e.g., 1.03, 1.22, 1.60):</label><br>
+        <input type="text" id="previousValues" placeholder="Enter previous flight times"><br>
+        <button onclick="calculatePrediction()">Calculate Cashout</button>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
